@@ -7,7 +7,12 @@ def convert(unit: str) -> float:
             return ()
 
 
-def main():
+def temp_convert():
+    '''
+    Temperature Converter
+    ---
+    This script converts temperatures between Fahrenheit and Celsius. It takes a temperature value and its unit as command-line arguments and performs the conversion accordingly.
+    '''
     parser = argparse.ArgumentParser(
         description='Converts Fahrenheit to Celsius and vice versa.', 
         usage= '''
@@ -39,4 +44,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    temp_convert()
